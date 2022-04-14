@@ -38,3 +38,6 @@ if (row == undefined){
 } else{
     console.log('A Log database exists.')
 }
+
+// Export as a module
+module.exports = db
