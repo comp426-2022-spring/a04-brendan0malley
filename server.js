@@ -72,6 +72,17 @@ app.use((req, res, next) => {
     next();
 })
 
+if (args.debug || args.d) {
+    app.get('/app/log/access/', (req, res, next) => {
+        const stmt = db.prepare("SELECT * FROM accesslog").all();
+	    res.status(200).json(stmt);
+    })
+
+    app.get('/app/error/', (req, res, next) => {
+        throw new Error('Error test works.')
+    })
+}
+
 //Coin Functions
 function coinFlip() {
     return(Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
