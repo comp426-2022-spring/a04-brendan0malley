@@ -26,6 +26,11 @@ const server = app.listen(port, () => {
     console.log("Server running on port %PORT%".replace("%PORT%",port))
 });
 
+app.get("/app/", (req, res, next) => {
+    res.json({"message":"Your API works! (200)"});
+	res.status(200);
+});
+
 if (args.log == 'false') {
     console.log("NOTICE: not creating file access.log")
 }else{
