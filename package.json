@@ -1,0 +1,27 @@
+{
+  "name": "a04-brendan0malley",
+  "version": "1.0.0",
+  "description": "a04-brendan0malley",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js --debug --port=5000",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a04-brendan0malley.git"
+  },
+  "author": "Brendan O'Malley",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a04-brendan0malley/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a04-brendan0malley#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.1",
+    "express": "^4.17.3",
+    "minimist": "^1.2.6",
+    "morgan": "^1.10.0",
+    "sqlite": "^4.0.25"
+  }
+}
